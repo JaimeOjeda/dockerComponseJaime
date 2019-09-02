@@ -1,0 +1,13 @@
+version: '2.1'
+services:
+  app_example:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ex_app:v1
+    container_name: app_ex
+    ports:
+      - 8080:8080
+
+
+
